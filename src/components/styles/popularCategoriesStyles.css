@@ -1,0 +1,32 @@
+.popularCategories_container{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 78px;
+    padding-bottom: 208px;
+
+}
+
+.titles_container{
+    display: grid;
+    gap: 29px;
+    text-align: center;
+}
+
+.cards_popularCategories_container{
+    display: grid;
+    justify-content: center;
+    gap: 38px;
+}
+
+@media (min-width:768px ){
+    .cards_popularCategories_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1500px ){
+    .cards_popularCategories_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

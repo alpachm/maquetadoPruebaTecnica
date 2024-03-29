@@ -1,0 +1,31 @@
+.cardStoryAndServices_container{
+    width: 277px;
+    height: 297.15px;
+    border-radius: 30px;
+    background-color: var(--WHITE);
+    box-shadow: 7px 12px 43px rgba(0,0,0, .14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 22px;
+}
+
+.cardStoryAndServices_container img{
+    width: 64px;
+}
+
+.cardStoryAndServices_container h4{
+    font-weight: var(--FOMN_LIGHT_BOLD);
+    color: var(--CARD_ICONS_COLOR);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.cardStoryAndServices_container p{
+    font-weight: var(--FONT_REGULAR);
+    font-size: 20px;
+    text-align: center;
+    color: #90BD95;
+}

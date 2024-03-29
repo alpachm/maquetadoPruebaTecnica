@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+  /*COLORS*/
+  --BG_COLOR: #FAFAFA;
+  --WHITE: #FFF;
+  --PRIMARY_COLOR: #39DB4A;
+  --PRIMARY_LIGHT_COLOR: #C1F1C6;
+  --SECONDARY_COLOR: #FF6868;
+  --CARD_ICONS_COLOR: #5FE26C;
+  --MENU_TEXT_COLOR: #272727;
+  --POPULAR_CATEGORIES_TITLE_COLOR: #1E1E1E;
+  --TITLE_COLOR: #000000;
+  --TEXT_COLOR: #4A4A4A;
+  --TEXT_CARD_COLOR: #2C2C2C;
+  --PRICE_CARD_COLOR: #515151;
+  --SYMBOL_CARD_COLOR: #FF7979;
+
+  /*FONT SIZE*/;
+  --MAIN_TITLE_TEXT_SIZE: 62px;
+  --SUBTITLE_TEXT_SIZE: 60px;
+  --TOP_SUBTITLE_TEXT_SIZE: 20px;
+  --MENU_TEXT_SIZE: 20px;
+  --PARAGRAPH_TEXT_SIZE: 26px;
+  --POPULAR_CATEGORIES_TITLE_SIZE: 30px;
+
+  /*FONT WEIGHT*/
+  --FONT_LIGHT: 500;
+  --FONT_REGULAR: 600;
+  --FOMN_LIGHT_BOLD: 700;
+  --FONT_BOLD: 800;
+
+  /*RESPONSIVE*/
+  --DESKTOP: 1024px;
+  --TABLET: 768px;
+
+  /*Z-INDEX*/
+  --Z_INDEX_HEADER: 1000;
+  --Z_INDEX_MENU: 2000;
+
+  /*LETTER SPACING*/
+  --TOP_SUBTITLE_LETTER_SPACING: 5px;
+ }
+
+ html{
+  background-color: var(--BG_COLOR);
+ }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: var(--FONT_REGULAR);
+  font-size: var(--PARAGRAPH_TEXT_SIZE);
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.container{
+  margin: auto;
+  width: 90%;
+  max-width: 1422px;
+}
+
+.paragraph {
+  color: var(--TEXT_COLOR);
+  font-weight: var(--FONT_LIGHT);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top_subtitle {
+  font-weight: var(--FOMN_LIGHT_BOLD);
+  text-transform: uppercase;
+  font-size: var(--TOP_SUBTITLE_TEXT_SIZE);
+  letter-spacing: var(--TOP_SUBTITLE_LETTER_SPACING);
+  color: var(--SECONDARY_COLOR);
+}
+
+.subtitle {
+  font-weight: var(--FOMN_LIGHT_BOLD);
+  color: var(--TITLE_COLOR);
+  font-size: var(--SUBTITLE_TEXT_SIZE);
+}
+
+.card_title {
+  font-weight: var(--FONT_REGULAR);
+  color: var(--POPULAR_CATEGORIES_TITLE_COLOR);
+  font-size: var(--POPULAR_CATEGORIES_TITLE_SIZE);
+}
+
+.card_text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #555555
+}

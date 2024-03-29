@@ -1,0 +1,39 @@
+.storyAndServices_container{
+    display: grid;
+    justify-items: center;
+    gap: 96px;
+    padding-bottom: 100px;
+}
+
+.storyAndServices_textContent{
+    display: grid;
+    justify-content: start;
+    gap: 50px;
+}
+
+.storyAndServices_textContent p{
+    line-height: 41.6px ;
+}
+
+.cardsStoryAndServices_container{
+    display: grid;
+    justify-content: center;
+    gap: 36px;
+}
+
+@media (min-width: 768px){
+    .cardsStoryAndServices_container{
+        grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 1024px){
+    .storyAndServices_container{
+        padding-bottom: 247px;
+    }
+}}
+
+@media (min-width: 1340px){
+    .storyAndServices_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}

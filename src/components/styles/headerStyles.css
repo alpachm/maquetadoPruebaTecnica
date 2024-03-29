@@ -1,0 +1,153 @@
+header{
+    position: relative;
+    z-index: var(--Z_INDEX_HEADER);
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+header > .fa-solid {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 25px;
+}
+
+header .navBar{
+    background-color: var(--BG_COLOR);
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    position: fixed;
+    z-index: var(--Z_INDEX_MENU);
+    top: 0;
+    right: -120%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: right 200ms ;
+}
+
+header .navBar_active{
+    right: 0;
+}
+
+header .navBar > i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    color: red;
+}
+
+header .navBar div{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+}
+
+header .navBar div a{
+    text-decoration: none;
+    color: var(--MENU_TEXT_COLOR);
+    font-size: 50px;
+    font-weight: var(--FONT_LIGHT);
+}
+
+header .navBar div a:hover{
+    color: var(--PRIMARY_COLOR);
+}
+
+header .navBar div i{
+    color: var(--PRIMARY_COLOR);
+    font-size: 30px;
+}
+
+header section:nth-last-child(1){
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+
+header section:nth-last-child(1) div{
+    position: relative;
+    z-index: var(--Z_INDEX_HEADER);
+}
+
+header section:nth-last-child(1) div span{
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: var(--PRIMARY_COLOR);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+header section:nth-last-child(1) button{
+    background-color: var(--PRIMARY_COLOR);
+    border: none;
+    width: 179px;
+    height: 60px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+header section:nth-last-child(1) button p{
+    font-size: 20px;
+    color:white;
+}
+
+@media (min-width: 768px){
+    header > .fa-solid {
+        display: none;
+    }
+
+    header .navBar{
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        position: static;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    header .navBar > i {
+        display: none;
+    }
+
+    header .navBar div a {
+        font-size: var(--MENU_TEXT_SIZE) ;
+    }
+
+    header .navBar div i{
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1024px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 57px 0;
+    }
+}

@@ -1,0 +1,44 @@
+.card_container{
+    width: 349px;
+    height: 132px;
+    padding: 17px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 28px;
+    background-color: var(--WHITE);
+    border-radius: 25px;
+    box-shadow: 7px 35px 51px rgba(0,0,0, .14);
+}
+
+.card_container img{
+    width: 98px;
+    height: 98px;
+}
+
+.card_container .cardInfo_container{
+    display: grid;
+    gap: 10px;
+}
+
+.card_container .cardInfo_container h4:nth-child(1){
+    font-size: 22px;
+    font-weight: var(--FONT_REGULAR);
+    color: var(--TEXT_CARD_COLOR);
+}
+
+.stars_container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card_container .cardInfo_container h4:nth-child(3){
+    font-size: 24px;
+    color: var(--PRICE_CARD_COLOR);
+}
+
+.card_container .cardInfo_container h4:nth-child(3) span{
+    color: var(--SYMBOL_CARD_COLOR);
+    font-size: 18px;
+}

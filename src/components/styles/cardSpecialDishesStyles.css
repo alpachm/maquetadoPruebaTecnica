@@ -1,0 +1,58 @@
+.card_specialDishes_container{
+    position: relative;
+    display: grid;
+    padding: 37px 46px;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 45px;
+    background-color: var(--WHITE);
+    box-shadow: 2px 9px 42px rgba(0,0,0, .08);
+    overflow: hidden;
+}
+
+.favorite_button{
+    cursor: pointer;
+    background-color: var(--PRIMARY_COLOR);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 77px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 37.5px 0 42.5px;
+}
+
+.favorite_button i{
+    color: var(--WHITE);
+}
+
+.content_card_specialDishes{
+    display: grid;
+    gap: 19px;
+}
+
+.card_specialDishes_container footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_specialDishes_container footer p:nth-child(1) span{
+    font-size: 18px;
+    color: var(--SYMBOL_CARD_COLOR);
+}
+
+.card_specialDishes_container footer p {
+    font-size: 24px;
+    color: var(--TITLE_COLOR)
+}
+
+.card_specialDishes_container footer > span{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--TEXT_CARD_COLOR);
+    font-size: 24px;
+}
